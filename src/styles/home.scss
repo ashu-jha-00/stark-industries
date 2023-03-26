@@ -1,0 +1,181 @@
+@import "colors";
+
+.home {
+  width: 100%;
+  height: 100vh;
+  background-color: $second;
+  border-radius: 0 0 200px 200px;
+
+  > main {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    // text-transform: uppercase;
+  }
+
+  h1 {
+    font: 400 6rem $text1;
+    color: white;
+    // font-weight: bolder;
+  }
+  p {
+    font: 600 1rem $text1;
+    color: white;
+  }
+
+  &::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: no-repeat center url("../assets/strk.jpg");
+
+    filter: blur(1px);
+    border-radius: 0 0 100px 100px;
+  }
+}
+
+.home2 {
+  width: 100%;
+  height: 100vh;
+  background-color: $second;
+  justify-content: center;
+  align-items: center;
+  padding: 500 px;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  // margin: 5rem;
+  display: flex;
+  margin-top: -200px;
+  h1 {
+    color: white;
+  }
+  p {
+    color: $first;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+    font: 50 1.2rem $text1;
+  }
+
+  > img {
+    width: 30%;
+    animation: imgUp 0.7s linear infinite alternate;
+  }
+
+  > div {
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    // float: right;
+    display: flex;
+    flex-direction: column;
+    padding: 5rem;
+    height: 100vh;
+  }
+}
+
+@keyframes imgUp {
+  to {
+    transform: translateY(-10px);
+  }
+}
+
+.home3 {
+  width: 100%;
+  height: 100vh;
+  background-color: $second;
+  margin-top: -200px;
+  display: flex;
+
+  > div {
+    height: 80vh;
+    width: 70%;
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 0 100px 100px 0;
+    padding: 2rem;
+
+    > h1 {
+      text-transform: uppercase;
+      border-bottom: 2px solid $dark;
+      padding: 0.5rem;
+      width: 15rem;
+      color: $dark;
+    }
+    > p {
+      padding: 3rem;
+      letter-spacing: 2px;
+      word-spacing: 5px;
+      line-height: 120%;
+      font: 100 1rem $text2;
+    }
+  }
+}
+
+.home4 {
+  width: 100%;
+  height: 100vh;
+  background-color: $second;
+  display: flex;
+  justify-content: flex-end;
+
+  > div {
+    background-color: $third;
+    border-radius: 200px 0 0 200px;
+    width: 70%;
+    height: 70vh;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    > h1 {
+      color: $first;
+      text-transform: uppercase;
+      width: 140px;
+      border-bottom: 2px solid $first;
+      padding: 0.5rem;
+    }
+
+    > article {
+      display: flex;
+      margin: 2rem 0;
+      flex-wrap: wrap;
+      justify-content: center;
+      > div {
+        animation: imgUp 0.7s linear infinite alternate;
+        margin: 1rem;
+        height: 10rem;
+        width: 10rem;
+        background-color: $first;
+        border-radius: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: $dark;
+        cursor: pointer;
+        transition: all 0.5s;
+        &:hover {
+          filter: invert(1);
+        }
+
+        svg {
+          font-size: 4rem;
+        }
+        p {
+          font: 900 1.2rem $text2;
+        }
+      }
+    }
+  }
+}
