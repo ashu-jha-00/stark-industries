@@ -12,9 +12,15 @@ const footer = () => {
       <div>
         <h5>Handles</h5>
         <div>
-          <a href="https://youtube.com">Youtube</a>
-          <a href="https://google.com">Google</a>
-          <a href="https://Instagram.com">Instagram</a>
+          <a href="https://youtube.com" target="_blank">
+            Youtube
+          </a>
+          <a href="https://google.com" target="_blank">
+            Google
+          </a>
+          <a href="https://Instagram.com" target="_blank">
+            Instagram
+          </a>
         </div>
       </div>
     </footer>
